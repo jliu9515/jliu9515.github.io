@@ -152,9 +152,9 @@ function initScrollAnimations() {
     });
   }, observerOptions);
 
-  // Observe elements
+  // Observe elements (Added .cert-card here)
   const animateElements = document.querySelectorAll(
-    '.about-track, .skill-category, .timeline-item, .project-card, .contact-item'
+    '.about-track, .skill-category, .timeline-item, .project-card, .contact-item, .cert-card'
   );
   
   animateElements.forEach((el, index) => {
@@ -284,4 +284,3 @@ function navigateSlide(direction) {
   
   updateSlide();
 }
-
