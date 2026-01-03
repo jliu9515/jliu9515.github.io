@@ -10,7 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initPortfolio();
   initModal();
+  updateCopyrightYear();
 });
+
+/* ============================================
+   UTILITY
+   ============================================ */
+function updateCopyrightYear() {
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+}
 
 /* ============================================
    NAVIGATION
@@ -154,7 +165,7 @@ function initScrollAnimations() {
 
   // Observe elements (Added .cert-card here)
   const animateElements = document.querySelectorAll(
-    '.about-track, .skill-category, .timeline-item, .project-card, .contact-item, .cert-card'
+    '.about-track, .skill-category, .timeline-item, .project-card, .contact-item, .cert-card, .blog-card'
   );
   
   animateElements.forEach((el, index) => {

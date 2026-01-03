@@ -336,14 +336,14 @@
       </div>
 
       <div class="cert-grid">
-        <!-- Badge 1: AWS GenAI Pro -->
-        <a href="https://www.credly.com/badges/313d9c0d-7e5c-44d5-bc5f-0571fd46e9a1/public_url" target="_blank" class="cert-card">
+        <!-- Badge 1: CKAD -->
+        <a href="https://www.credly.com/badges/62ad9bdf-af1b-4318-8923-d317be1fb105/public_url" target="_blank" class="cert-card">
           <div class="cert-icon-wrapper">
-            <img src="https://images.credly.com/size/340x340/images/9de9a2f7-3259-4720-bb74-095563bb1e49/blob" alt="AWS Certified Generative AI Developer Badge">
+            <img src="https://images.credly.com/size/340x340/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob" alt="CKAD Badge">
           </div>
           <div class="cert-content">
-            <h3>AWS Certified Generative AI Developer – Professional</h3>
-            <p class="cert-issuer">Amazon Web Services (Early Adopter)</p>
+            <h3>Certified Kubernetes Application Developer (CKAD)</h3>
+            <p class="cert-issuer">The Linux Foundation</p>
             <div class="cert-verify">
               <span>Verify Credential</span>
               <i class="fas fa-external-link-alt"></i>
@@ -352,7 +352,23 @@
           <div class="cert-bg-glow"></div>
         </a>
 
-        <!-- Badge 2: Azure Developer Associate -->
+        <!-- Badge 2: AWS GenAI Pro -->
+        <a href="https://www.credly.com/badges/313d9c0d-7e5c-44d5-bc5f-0571fd46e9a1/public_url" target="_blank" class="cert-card">
+          <div class="cert-icon-wrapper">
+            <img src="https://images.credly.com/size/340x340/images/9de9a2f7-3259-4720-bb74-095563bb1e49/blob" alt="AWS Certified Generative AI Developer Badge">
+          </div>
+          <div class="cert-content">
+            <h3>AWS Certified Generative AI Developer – Professional (Early Adopter)</h3>
+            <p class="cert-issuer">Amazon Web Services</p>
+            <div class="cert-verify">
+              <span>Verify Credential</span>
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="cert-bg-glow"></div>
+        </a>
+
+        <!-- Badge 3: Azure Developer Associate -->
         <a href="https://learn.microsoft.com/api/credentials/share/en-au/jacklau9515/DA3FB9785A189B60?sharingId=A765DB71FC689A2C" target="_blank" class="cert-card">
           <div class="cert-icon-wrapper">
             <!-- Using Microsoft Badge Image URL (Placeholder or actual if known, using a generic Azure one for now or icon fall back) -->
@@ -565,6 +581,76 @@
     </div>
   </div>
 
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Insights</span>
+        <h2 class="section-title">Writing & Thoughts</h2>
+        <p class="section-subtitle">Deep dives into LLM Systems, Engineering, and AI Research.</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <article class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Oct 12, 2024</span>
+              <span class="blog-tag">LLM Systems</span>
+            </div>
+            <h3 class="blog-title">
+              <a href="https://medium.com/@jacklau9515" target="_blank">Optimizing vLLM Inference Latency: A Deep Dive into PagedAttention</a>
+            </h3>
+            <p class="blog-excerpt">
+              Exploring how memory fragmentation impacts large model serving and how PagedAttention solves the KV cache bottleneck in production environments.
+            </p>
+            <a href="https://medium.com/@jacklau9515" target="_blank" class="blog-link">
+              <i class="fab fa-medium"></i> Read on Medium
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Sep 28, 2024</span>
+              <span class="blog-tag">RAG</span>
+            </div>
+            <h3 class="blog-title">
+              <a href="https://medium.com/@jacklau9515" target="_blank">Advanced RAG Patterns: From Naive Retrieval to Agentic Reasoning</a>
+            </h3>
+            <p class="blog-excerpt">
+              Why simple vector search isn't enough. Implementing hybrid search, query rewriting, and re-ranking pipelines for enterprise-grade QA systems.
+            </p>
+            <a href="https://medium.com/@jacklau9515" target="_blank" class="blog-link">
+              <i class="fab fa-medium"></i> Read on Medium
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card">
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-date">Aug 15, 2024</span>
+              <span class="blog-tag">Engineering</span>
+            </div>
+            <h3 class="blog-title">
+              <a href="https://medium.com/@jacklau9515" target="_blank">Building Resilient AI Gateways with .NET 8 and YARP</a>
+            </h3>
+            <p class="blog-excerpt">
+              Designing a high-throughput API gateway for multiple LLM providers with rate limiting, fallback strategies, and semantic caching.
+            </p>
+            <a href="https://medium.com/@jacklau9515" target="_blank" class="blog-link">
+              <i class="fab fa-medium"></i> Read on Medium
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="contact-wrapper">
@@ -640,7 +726,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2025 Jack Liu. Bridging Research & Engineering.</p>
+        <p>&copy; <span id="currentYear"></span> Jack Liu. Bridging Research & Engineering.</p>
         <p class="footer-tagline">Built with passion for AI and beautiful code.</p>
       </div>
   </div>
