@@ -1725,6 +1725,10 @@ ul, ol {
     content: "UPenn AI";
   }
   
+  .scroll-indicator {
+    display: none;
+  }
+  
   .about-btn-group {
     flex-direction: column;
   }
